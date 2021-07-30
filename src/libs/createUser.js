@@ -8,7 +8,7 @@ createUser.createAdminUser = async () => {
 
   const newUser = new Admin({
     username: "admin",
-    email: "admin@localhost"
+    email: "admin@localhost",
   });
 
   newUser.password = await newUser.encryptPassword("adminpassword");

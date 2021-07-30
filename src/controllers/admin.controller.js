@@ -15,7 +15,7 @@ adminCtrl.renderLoginForm = (req, res) =>{
 adminCtrl.signin = passport.authenticate("local", {
     successRedirect: "/admin",
     failureRedirect: "/admin/signin",
-    failureFlash: true
+    failureFlash: true,
 });
 
 adminCtrl.logout = (req, res) => {

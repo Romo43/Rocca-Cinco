@@ -15,7 +15,7 @@ const menuSchema = new Schema({
     },
     URLimage: {
         type: String
-    }
+    },
 }, {
     timestamps: true
 })

@@ -12,7 +12,7 @@ const promotionSchema = new Schema({
     },
     URLimage: {
         type: String
-    }
+    },
 }, {
     timestamps: true
 })

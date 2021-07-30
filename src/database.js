@@ -1,5 +1,5 @@
 require('dotenv').config();
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 
 //const { Rocca_cinco_MONGODB_HOST, Rocca_cinco_MONGODB_DATABASE} = process.env;
 //const MONGODB_URI = `mongodb://${Rocca_cinco_MONGODB_HOST}/${Rocca_cinco_MONGODB_DATABASE}`;

@@ -24,7 +24,7 @@ menuCtrl.renderMenuA = async (req, res) =>{
 // Render MENU FOR CUSTOMER
 menuCtrl.renderMenu = async (req, res) => {
     const data = await Menu.find().lean();
-    res.render('menu', { data });
+    res.render('menu', { data })
     //res.render('admin/menu/menu');
   //  res.render('admin/menu/menu', {data});
     //res.status(200).json(data);
@@ -39,7 +39,7 @@ menuCtrl.renderEditForm = async (req, res) => {
 };
 
 menuCtrl.updateDish = async (req, res) => {
-    console.log(req.body);
+    console.log(req.body)
     const id = req.params.id;
     const { name, description, price, type, URLimage } = req.body;
     await Menu.findByIdAndUpdate(id, {name, description, price, type, URLimage });
