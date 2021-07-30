@@ -1,4 +1,4 @@
-const app = require('./server');
+const app = require('./app');
 require('./database');
 
 app.listen(app.get('port'), () => {
