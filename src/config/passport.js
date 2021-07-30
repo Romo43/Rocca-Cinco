@@ -5,7 +5,7 @@ const Admin = require('../models/Admin');
 
 passport.use(new LocalStrategy({
     usernameField: 'email',
-    passpordField: 'password'
+    passpordField: 'password',
 
 }, async (email, password, done) => {
 
